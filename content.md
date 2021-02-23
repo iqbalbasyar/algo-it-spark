@@ -108,7 +108,15 @@ Here's a graph showing that using DataFrame API will benefits more than RDDs ([s
 
 ![](assets/rdd-vs-df.png)
 
-From the graph above, it's shown that regardless of 
+From the graph above, it's shown that regardless of the language (SQL, R, Python, Scala), the dataframe perfomrs better than the RDD. 
 
-For the rest of the class, we will be using Spark DataFrame API to cope with our data. 
+The secret behind such performance is **spark catalyst**. The catalyst will automatically figure out how the execution will be done, what can be improved, what order of queries could be changed. This picture will show how a query is executed.
+
+![](assets/df-execution.png)
+
+From the graph above, any query will be converted into logical plan, then the catalyst evaluate to optimizer the plan and transform it into physical plan. 
+
+The analogy of this is when you are using a map application and setting up a direction from point A to point B, you specify **what** you want to do, then the map app figure out the **how** using optimized calculation and gives you the best route. 
+
+
 

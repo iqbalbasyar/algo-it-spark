@@ -1,0 +1,160 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Sparklyr
+
+
+In order to give some context of where spark fits when we are doing data analysis in R, it's it makes sense to ask this question right like "if you have slow code what do you do?". We know like it could be slow code because we are dealing with a lot of data. Or we could also be slow for other reasons. 
+
+```{r eval=TRUE}
+lm(mpg ~ wt + cyl, data = mtcars)
+```
+
+
+One techniques that we can use is just sample the data. If we have a lot of data we can reduce the amount of data that we have. As long as we do it properly and we know the statistical sampling method. 
+
+```{r eval=TRUE}
+mtcars %>% sample_n(10) %>% lm(mpg ~ wt + cyl, data = .)
+```
+
+The next solution is scale up the machine. Let say we have a bigger machine or server somewhere we can use to run that particular instance. For example, we can sent our model to Google Cloud and train it to get the result. And there is many other ways to handling slow code. 
+
+```{r}
+knitr::include_graphics(path = "img/scale-up.png")
+```
+
+Based on those diagrams, it looks like we can scale up basically by adding the machines. It means that we need to install **Spark** on each machine. We can run the model across all the machines without having to manually run a subset of the data and figure out how to aggegate it.
+
+## Connecting Spark
+
+`Sparklyr` is an R package we need to insulate from the CRAN and the second step is we need to install spark on that particular machine. We install it just by runnging `spark_install()` that pretty straightforward and then we can connect by saying `spark_connect(master = "local")`.
+
+```{r eval=FALSE}
+library(sparklyr) # R interfance to Apache Spark
+spark_install() # Install Apache Spark
+sc <- spark_connect(master = "local")
+```
+
+with `sparklyR` we can very easily work locally by specifying the parameter master equals to local. But you can also run on a variety of cluster providers like IBM Microsoft, Cloudera. definitely you know it's the same interface you work with it locally pretty easily and then you can change this parameter and connect to a proper cluster when needed.
+
+
+We also can install a specific version by using the Spark version and, optionally, by also specifying the Hadoop version. For instance, to install Spark 3.0, we would run:
+
+```{r eval=FALSE}
+spark_install(version = "3.0")
+```
+
+You can also check which versions are installed by running this command:
+
+```{r}
+spark_installed_versions()
+```
+The path where Spark is installed is known as Spark’s home, which is defined in R code and system configuration settings with the `SPARK_HOME` identifier. When you are using a local Spark cluster installed with sparklyr, this path is already known and no additional configuration needs to take place.
+
+## Using Sparklyr
+
+Why `sparklyr` instead of spark? `spaklyr` is an R implementation of interface to Spark. Spark in itself is a solution that allows you to work with big data (think terabytes or even petabytes) that simply is impossible on a single machine. So you would use `sparklyr` when and if you don't want to work with Spark directly (through Scala, for example), but you want to stay in R ecosystem.
+
+### Motivation
+
+Another reason why we use sparklyr are:
+
+* A dplyr interface for manipulating data. if you already know how to use the `dplyr` we can use the `dplyr` with `sparklyr`.  
+* Machine learning capabilities. With `sparklyr` we can create an ML Pipelines for building Machine Learning workflows in Spark. It also full support for feature transformers and machine learning algorithms.
+* Ecosystem of extensions. 
+
+### Web Interface
+
+### Wrangling Data
+
+We can use all of the available dplyr verbs against the tables within the cluster. to `read_csv` file you can use `spark_read_csv()` function. some commonly used arguments, namely `sc` which is a spark connection, `name` is The name to assign to the newly generated table and `path` to the path to the file.
+
+```{r}
+train_data <- spark_read_csv(sc = sc, name = "bank", path = "data-input/bank-full.csv", delimiter = ";")
+```
+
+You can see that those data now ran into spark. We can hit the down arrow to see the glimpse of data.
+
+```{r}
+knitr::include_graphics(path = "img/read-data.png")
+```
+
+Some `dplyr` Verbs:
+
+When we connected to a Spark Dataframe, `dplyr` translates the ocmmands into Spark SQL statements. Here are the five verbs with their corresponding SQL commands:
+
+* `select` ~ `SELECT`
+* `filter` ~ `WHERE`
+* `arrange` ~ `ORDER`
+* `mutate` ~ `operators: +, *, log, etc`
+* `summarise` ~ `aggregators: sum, min, sd, etc`
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+
+data_agg <- train_data %>% 
+  select(age, job, marital) %>% 
+  group_by(job) %>%
+  summarise(mean_age = mean(age))
+
+data_agg
+```
+
+So here we have run sparks equal on top of a spark data set and returned the results very quickly for small of data. But this would scale up to very large data set.
+
+In `sparklyr`, there is one feature transformer that is not available in Spark, `ft_dplyr_transformer()`. The goal of this function is to convert the dplyr code to a SQL Feature Transformer that can then be used in a Pipeline.
+
+```{r}
+ft_dplyr_transformer(sc, data_agg) %>% 
+  ml_param("statement")
+```
+
+So this is the sequel statement that is being passed back. Its very powerful because that means the dplyr can be used with other databases.
+
+#### Laziness
+
+When working with databases, dplyr tries to be as lazy as possible:
+
+* it never pulls data into R unless you explicity ask for it.
+* it delays doing any work until the last possible momment: it collects together everything you want to do and then sends it to the database in one step.
+
+for instance, take the following code:
+
+```{r}
+data_agg2 <- train_data %>% 
+  select(education, default, balance) %>% 
+  filter(default == "yes") %>% 
+  arrange(desc(balance))
+
+
+data_agg3 <- data_agg2 %>% 
+  rename(default_yes = default)
+
+data_agg3
+```
+ 
+
+When we have run the first line `data_agg2` nothing runs and went around the second one nothing to runs also. But when we run the `data_agg3` object it executes and then finally we start saying like 
+
+#### Collecting data into R
+
+In general, we usually start by analyzing data in Spark with dplyr, followed by aggregated data, and sampling rows, and many data transformation tasks. The last step is to `collect` data from Spark to perform further data processing in R, like data visualization. Let’s perform a very simple data analysis example by selecting, sampling, and print the bank dataset in Spark:
+
+```{r}
+set.seed(100)
+
+sample_bank <- train_data %>% 
+  select(age, balance) %>% 
+  sample_n(100)
+
+sample_bank %>% 
+  collect() %>% 
+  head()
+```
+
+So `collect()` executes the Spark query and return the result to R for further analysis. So one that data is in R it does not stop you from doin anything else data analysis tasks. 
+
+
+To be continue...

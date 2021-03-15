@@ -1,0 +1,331 @@
+21/02/24 23:39:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/02/24 23:39:20 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:39:20 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:39:20 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:39:20 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:39:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:39:21 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:39:21 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:39:21 INFO ResourceUtils: ==============================================================
+21/02/24 23:39:21 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:39:21 INFO ResourceUtils: ==============================================================
+21/02/24 23:39:21 INFO SparkContext: Submitted application: maps_and_lazy_evaluation_example
+21/02/24 23:39:21 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:39:21 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:39:21 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:39:21 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:39:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:39:21 INFO Utils: Successfully started service 'sparkDriver' on port 52664.
+21/02/24 23:39:21 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:39:21 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:39:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:39:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:39:21 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:39:21 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-66cae7c4-93c0-4bfb-8982-197b4bd2024a
+21/02/24 23:39:21 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:39:21 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:39:21 WARN Utils: The configured local directories are not expected to be URIs; however, got suspicious values [C:/Users/tomyt/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/local]. Please check your configured local directories.
+21/02/24 23:39:22 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:39:22 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:39:22 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:39:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52707.
+21/02/24 23:39:22 INFO NettyBlockTransferService: Server created on host.docker.internal:52707
+21/02/24 23:39:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:39:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 52707, None)
+21/02/24 23:39:22 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:52707 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 52707, None)
+21/02/24 23:39:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 52707, None)
+21/02/24 23:39:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 52707, None)
+21/02/24 23:39:22 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:39:22 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:39:22 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:39:22 INFO BlockManager: BlockManager stopped
+21/02/24 23:39:22 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:39:22 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:39:22 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:39:38 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:39:38 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:39:38 INFO ResourceUtils: ==============================================================
+21/02/24 23:39:38 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:39:38 INFO ResourceUtils: ==============================================================
+21/02/24 23:39:38 INFO SparkContext: Submitted application: test
+21/02/24 23:39:38 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:39:38 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:39:38 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:39:38 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:39:38 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:39:38 INFO Utils: Successfully started service 'sparkDriver' on port 52744.
+21/02/24 23:39:38 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:39:38 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:39:38 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:39:38 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:39:38 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:39:38 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-81fbc5f9-176d-4e0d-acbc-32cbafd43e97
+21/02/24 23:39:38 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:39:38 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:39:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:39:38 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:39:38 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:39:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52787.
+21/02/24 23:39:38 INFO NettyBlockTransferService: Server created on host.docker.internal:52787
+21/02/24 23:39:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:39:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 52787, None)
+21/02/24 23:39:38 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:52787 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 52787, None)
+21/02/24 23:39:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 52787, None)
+21/02/24 23:39:38 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 52787, None)
+21/02/24 23:39:38 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:39:38 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:39:38 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:39:38 INFO BlockManager: BlockManager stopped
+21/02/24 23:39:38 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:39:38 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:39:38 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:40:35 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:40:35 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:40:35 INFO ResourceUtils: ==============================================================
+21/02/24 23:40:35 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:40:35 INFO ResourceUtils: ==============================================================
+21/02/24 23:40:35 INFO SparkContext: Submitted application: maps_and_lazy_evaluation_example
+21/02/24 23:40:35 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:40:35 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:40:35 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:40:35 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:40:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:40:35 INFO Utils: Successfully started service 'sparkDriver' on port 52855.
+21/02/24 23:40:35 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:40:35 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:40:35 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:40:35 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:40:35 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:40:35 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-c07f380f-6aca-46c9-9d8e-e2d7af9807de
+21/02/24 23:40:35 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:40:35 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:40:35 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:40:35 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:40:35 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:40:35 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52898.
+21/02/24 23:40:35 INFO NettyBlockTransferService: Server created on host.docker.internal:52898
+21/02/24 23:40:35 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:40:35 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 52898, None)
+21/02/24 23:40:35 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:52898 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 52898, None)
+21/02/24 23:40:35 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 52898, None)
+21/02/24 23:40:35 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 52898, None)
+21/02/24 23:40:35 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:40:35 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:40:35 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:40:35 INFO BlockManager: BlockManager stopped
+21/02/24 23:40:35 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:40:35 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:40:35 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:41:40 INFO ShutdownHookManager: Shutdown hook called
+21/02/24 23:41:40 INFO ShutdownHookManager: Deleting directory C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\spark-283747e5-3ea4-4c87-8031-e31af6f46876
+21/02/24 23:41:40 INFO ShutdownHookManager: Deleting directory C:\Users\tomyt\AppData\Local\Temp\spark-3846d890-e6f7-4e3b-9858-dfa0a80d8a1d
+21/02/24 23:41:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/02/24 23:41:44 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:41:44 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:41:44 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:41:44 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:41:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:41:44 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:41:44 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:41:44 INFO ResourceUtils: ==============================================================
+21/02/24 23:41:44 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:41:44 INFO ResourceUtils: ==============================================================
+21/02/24 23:41:44 INFO SparkContext: Submitted application: maps_and_lazy_evaluation_example
+21/02/24 23:41:44 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:41:44 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:41:44 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:41:44 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:41:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:41:45 INFO Utils: Successfully started service 'sparkDriver' on port 53065.
+21/02/24 23:41:45 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:41:45 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:41:45 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:41:45 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:41:45 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:41:45 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-e159cc28-f175-41c7-99d8-5c587d5a64ee
+21/02/24 23:41:45 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:41:45 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:41:45 WARN Utils: The configured local directories are not expected to be URIs; however, got suspicious values [C:/Users/tomyt/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/local]. Please check your configured local directories.
+21/02/24 23:41:45 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:41:45 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:41:45 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:41:45 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53108.
+21/02/24 23:41:45 INFO NettyBlockTransferService: Server created on host.docker.internal:53108
+21/02/24 23:41:45 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:41:45 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 53108, None)
+21/02/24 23:41:45 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:53108 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 53108, None)
+21/02/24 23:41:45 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 53108, None)
+21/02/24 23:41:45 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 53108, None)
+21/02/24 23:41:45 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:41:45 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:41:45 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:41:45 INFO BlockManager: BlockManager stopped
+21/02/24 23:41:45 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:41:45 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:41:45 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:41:57 INFO ShutdownHookManager: Shutdown hook called
+21/02/24 23:41:57 INFO ShutdownHookManager: Deleting directory C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\spark-9a8b5548-1966-409b-bedf-e25fd4961f8e
+21/02/24 23:41:57 INFO ShutdownHookManager: Deleting directory C:\Users\tomyt\AppData\Local\Temp\spark-a605f37c-8fe9-45d6-a9b4-5006deaa9991
+21/02/24 23:42:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/02/24 23:42:08 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:42:08 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:42:08 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:42:08 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:42:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:42:09 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:42:09 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:42:09 INFO ResourceUtils: ==============================================================
+21/02/24 23:42:09 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:42:09 INFO ResourceUtils: ==============================================================
+21/02/24 23:42:09 INFO SparkContext: Submitted application: maps_and_lazy_evaluation_example
+21/02/24 23:42:09 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:42:09 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:42:09 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:42:09 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:42:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:42:09 INFO Utils: Successfully started service 'sparkDriver' on port 53216.
+21/02/24 23:42:09 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:42:09 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:42:09 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:42:09 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:42:09 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:42:09 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-d2269e1c-7ac3-4469-96a2-bd20c738b13a
+21/02/24 23:42:09 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:42:09 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:42:09 WARN Utils: The configured local directories are not expected to be URIs; however, got suspicious values [C:/Users/tomyt/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/local]. Please check your configured local directories.
+21/02/24 23:42:09 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:42:10 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:42:10 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:42:10 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53259.
+21/02/24 23:42:10 INFO NettyBlockTransferService: Server created on host.docker.internal:53259
+21/02/24 23:42:10 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:42:10 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 53259, None)
+21/02/24 23:42:10 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:53259 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 53259, None)
+21/02/24 23:42:10 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 53259, None)
+21/02/24 23:42:10 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 53259, None)
+21/02/24 23:42:10 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:42:10 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:42:10 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:42:10 INFO BlockManager: BlockManager stopped
+21/02/24 23:42:10 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:42:10 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:42:10 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:43:55 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:43:55 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:43:55 INFO ResourceUtils: ==============================================================
+21/02/24 23:43:55 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:43:55 INFO ResourceUtils: ==============================================================
+21/02/24 23:43:55 INFO SparkContext: Submitted application: maps_and_lazy_evaluation_example
+21/02/24 23:43:55 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:43:55 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:43:55 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:43:55 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:43:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:43:55 INFO Utils: Successfully started service 'sparkDriver' on port 53314.
+21/02/24 23:43:55 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:43:55 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:43:55 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:43:55 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:43:55 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:43:55 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-8ff04d7e-8695-45b1-968c-8ce9d1ea4448
+21/02/24 23:43:55 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:43:55 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:43:55 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:43:55 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:43:55 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:43:55 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53357.
+21/02/24 23:43:55 INFO NettyBlockTransferService: Server created on host.docker.internal:53357
+21/02/24 23:43:55 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:43:55 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 53357, None)
+21/02/24 23:43:55 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:53357 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 53357, None)
+21/02/24 23:43:55 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 53357, None)
+21/02/24 23:43:55 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 53357, None)
+21/02/24 23:43:55 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:43:55 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:43:55 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:43:55 INFO BlockManager: BlockManager stopped
+21/02/24 23:43:55 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:43:55 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:43:55 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:44:28 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:44:28 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:44:28 INFO ResourceUtils: ==============================================================
+21/02/24 23:44:28 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:44:28 INFO ResourceUtils: ==============================================================
+21/02/24 23:44:28 INFO SparkContext: Submitted application: myAppName
+21/02/24 23:44:28 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:44:28 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:44:28 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:44:28 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:44:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:44:28 INFO Utils: Successfully started service 'sparkDriver' on port 53399.
+21/02/24 23:44:28 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:44:28 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:44:28 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:44:28 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:44:28 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:44:28 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-4edfdad8-94f0-4c8c-b514-0d1a9d1ed8ea
+21/02/24 23:44:28 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:44:28 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:44:28 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:44:28 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:44:28 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:44:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53442.
+21/02/24 23:44:28 INFO NettyBlockTransferService: Server created on host.docker.internal:53442
+21/02/24 23:44:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:44:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 53442, None)
+21/02/24 23:44:28 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:53442 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 53442, None)
+21/02/24 23:44:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 53442, None)
+21/02/24 23:44:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 53442, None)
+21/02/24 23:44:29 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:44:29 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:44:29 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:44:29 INFO BlockManager: BlockManager stopped
+21/02/24 23:44:29 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:44:29 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:44:29 INFO SparkContext: Successfully stopped SparkContext
+21/02/24 23:54:43 INFO SparkContext: Running Spark version 3.0.1
+21/02/24 23:54:43 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/24 23:54:43 INFO ResourceUtils: ==============================================================
+21/02/24 23:54:43 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/24 23:54:43 INFO ResourceUtils: ==============================================================
+21/02/24 23:54:43 INFO SparkContext: Submitted application: First App
+21/02/24 23:54:43 INFO SecurityManager: Changing view acls to: tomyt
+21/02/24 23:54:43 INFO SecurityManager: Changing modify acls to: tomyt
+21/02/24 23:54:43 INFO SecurityManager: Changing view acls groups to: 
+21/02/24 23:54:43 INFO SecurityManager: Changing modify acls groups to: 
+21/02/24 23:54:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(tomyt); groups with view permissions: Set(); users  with modify permissions: Set(tomyt); groups with modify permissions: Set()
+21/02/24 23:54:43 INFO Utils: Successfully started service 'sparkDriver' on port 53722.
+21/02/24 23:54:43 INFO SparkEnv: Registering MapOutputTracker
+21/02/24 23:54:43 INFO SparkEnv: Registering BlockManagerMaster
+21/02/24 23:54:43 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/24 23:54:43 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/24 23:54:43 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/24 23:54:43 INFO DiskBlockManager: Created local directory at C:\Users\tomyt\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-3305d85e-b58d-480e-a369-4d32cc4ca2d9
+21/02/24 23:54:43 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/02/24 23:54:43 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/24 23:54:43 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/24 23:54:43 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/02/24 23:54:43 INFO Executor: Starting executor ID driver on host host.docker.internal
+21/02/24 23:54:43 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53737.
+21/02/24 23:54:43 INFO NettyBlockTransferService: Server created on host.docker.internal:53737
+21/02/24 23:54:43 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/24 23:54:43 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 53737, None)
+21/02/24 23:54:43 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:53737 with 366.3 MiB RAM, BlockManagerId(driver, host.docker.internal, 53737, None)
+21/02/24 23:54:43 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 53737, None)
+21/02/24 23:54:43 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 53737, None)
+21/02/24 23:54:43 INFO SparkUI: Stopped Spark web UI at http://host.docker.internal:4040
+21/02/24 23:54:43 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/24 23:54:43 INFO MemoryStore: MemoryStore cleared
+21/02/24 23:54:43 INFO BlockManager: BlockManager stopped
+21/02/24 23:54:43 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/24 23:54:43 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/24 23:54:43 INFO SparkContext: Successfully stopped SparkContext
